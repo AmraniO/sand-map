@@ -5,14 +5,14 @@
     "guid": "sandmapEB069887C7A24F3880542DC48849232A",
     "visualClassName": "Visual",
     "version": "1.0.0",
-    "description": "",
-    "supportUrl": "",
-    "gitHubUrl": ""
+    "description": "Sand Map is a PowerBI custom visual developed using R & TypeScript",
+    "supportUrl": "https://github.com/AmraniO/sand-map",
+    "gitHubUrl": "https://github.com/AmraniO/sand-map"
   },
   "apiVersion": "1.11.0",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Omar Amrani",
+    "email": "o.amrani@gmail.com"
   },
   "assets": {
     "icon": "assets/icon.png"
