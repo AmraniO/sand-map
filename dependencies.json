@@ -1,0 +1,9 @@
+{
+  "cranPackages": [
+    {
+      "name": "maps",
+      "displayName": "Maps",
+      "url": "https://cran.r-project.org/web/packages/maps/index.html"
+    }
+  ]
+}

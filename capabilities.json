@@ -1,0 +1,118 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Longitude",
+      "name": "lng",
+      "kind": "GroupingOrMeasure"
+    },
+    {
+      "displayName": "Latitude",
+      "name": "lat",
+      "kind": "GroupingOrMeasure"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "scriptResult": {
+        "dataInput": {
+          "table": {
+            "rows": {
+              "select": [
+                {
+                  "for": {
+                    "in": "lng"
+                  }
+                },
+                {
+                  "for": {
+                    "in": "lat"
+                  }
+                }
+              ],
+              "dataReductionAlgorithm": {
+                "top": {}
+              }
+            }
+          }
+        },
+        "script": {
+          "scriptProviderDefault": "R",
+          "scriptOutputType": "png",
+          "source": {
+            "objectName": "rcv_script",
+            "propertyName": "source"
+          },
+          "provider": {
+            "objectName": "rcv_script",
+            "propertyName": "provider"
+          }
+        }
+      }
+    }
+  ],
+  "objects": {
+    "rcv_script": {
+      "properties": {
+        "provider": {
+          "type": {
+            "text": true
+          }
+        },
+        "source": {
+          "type": {
+            "scripting": {
+              "source": true
+            }
+          }
+        }
+      }
+    },
+    "settings_map_params": {
+      "displayName": "Map",
+      "description": "Map settings",
+      "properties": {
+        "mapColor": {
+          "displayName": "Color",
+          "description": "Map color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "mapBackgroundColor": {
+          "displayName": "Background color",
+          "description": "Map background color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "pointColor": {
+          "displayName": "Point color",
+          "description": "Point color",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "pointCex": {
+          "displayName": "Point Cex",
+          "description": "Point Cex",
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    }
+  },
+  "suppressDefaultTitle": true
+}
