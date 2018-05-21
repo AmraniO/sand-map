@@ -1,6 +1,6 @@
-# Sand-Map
+# Sand Map
 
-Sand-Map is a PowerBI custom visual developed using R & TypeScript.
+Sand Map is a PowerBI custom visual developed using R & TypeScript.
 
 ## Installation?
 
