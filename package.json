@@ -2,5 +2,8 @@
   "name": "visual",
   "devDependencies": {
     "powerbi-visuals-utils-dataviewutils": "1.2.0"
+  },
+  "dependencies": {
+    "npm": "^6.0.1"
   }
 }
